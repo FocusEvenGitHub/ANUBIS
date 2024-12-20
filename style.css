@@ -2,6 +2,10 @@
 *{
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+  background-color: #000;
+}
 p {
     font: 400 20px Montserrat, sans-serif;
 }
@@ -72,6 +76,7 @@ p {
 
 .brand-name {
   width: 239px;
+  font-size: 25pt;
 }
 
 .nav-links {
@@ -110,6 +115,7 @@ p {
   width: 100%;
   align-items: center;
   padding: 48px 70px 0;
+  overflow: hidden;
 }
 
 .hero-image {
@@ -189,48 +195,52 @@ p {
 }
 
 .form-container {
-  width: 1004px;
+  width: 1000px;
   max-width: 100%;
 }
 
 .form-title {
   color: #f5f5f5;
-  font: 64px Aquire, sans-serif;
+  font: 18pt Aquire, sans-serif;
   text-align: center;
+  margin: 20px 0;
 }
 
 .contact-form {
-  border-radius: 53px;
+  border-radius: 2rem;
   background-color: #565656;
-  margin-top: 70px;
-  width: 802px;
+  margin-top: 5rem;
+  width: 60%;
   max-width: 100%;
-  padding: 32px 49px;
+  padding: 30px 50px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 1rem;
   margin: auto;
 }
 
 .form-group {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .form-label {
   color: #fff;
-  font: 34px Montserrat, sans-serif;
+  font: 600 16pt Montserrat, sans-serif;
 }
 
 .form-input {
   border-radius: 53px;
   background-color: rgba(217, 217, 217, 0.3);
-  width: 533px;
+  min-width: 25rem;
   height: 51px;
   border: none;
   padding: 0 20px;
   color: #fff;
+  font: 300 16pt Montserrat, sans-serif;
 }
 
 .submit-button {
@@ -238,25 +248,25 @@ p {
   background-color: #fff;
   color: #000;
   font-weight: 900;
-  padding: 7px 0;
+  padding: 1rem 0;
   width: 100%;
   border: none;
   cursor: pointer;
-  font: 34px Montserrat, sans-serif;
+  font: 700 18pt Montserrat, sans-serif;
 }
 
 .testimonials-title {
   color: #f5f5f5;
   text-align: center;
   margin-top: 161px;
-  font: 400 64px Aquire, sans-serif;
+  font: 400 18pt Aquire, sans-serif;
 }
 
 .testimonial-card {
-  border-radius: 42px;
+  border-radius: 5rem;
   background-color: #fff;
   margin-top: 60px;
-  width: 1614px;
+  width: 60%;
   max-width: 100%;
   padding-left: 49px;
   display: flex;
@@ -352,6 +362,9 @@ p {
   .nav-links {
     flex-direction: column;
   }
+  .cta-button{
+    display: none;
+  }
   .hero-content {
     padding: 0 20px;
     min-height: 0;
@@ -362,7 +375,7 @@ p {
   }
 
   .text-content{
-    width: 100vw;
+    width: auto!important;
     margin: 2rem;
     text-align: justify;
   }
@@ -392,25 +405,49 @@ p {
   .form-title {
     font-size: 40px;
   }
-
+  .form-input{
+    min-width: 170px;
+    height: 34px;
+    width: unset;
+    font: 300 12pt Montserrat, sans-serif;
+  }
+  .form-label{
+    font-size: 16pt;
+  }
   .contact-form {
+    border-radius: 1rem;
     padding: 20px;
     margin-top: 40px;
+    width: 80%;
+  }
+  .submit-button{
+    padding: 12px 0;
+    font: 700 18px Montserrat, sans-serif;
   }
 
   .testimonials-title {
     margin-top: 40px;
-    font-size: 40px;
+    font-size: 16pt;
   }
 
   .testimonial-card {
-    padding-left: 20px;
-    margin-top: 40px;
+    padding: 0 1rem;
+    margin-top: 2rem;
+    height: fit-content;
+  }
+  .testimonial-card h3{
+  font-size: 16pt;
   }
 
   .testimonial-content,
   .testimonial-image {
-    width: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .testimonial-content{
+    padding: 1rem;
+    margin: 0;
   }
 
   .footer {
@@ -419,6 +456,7 @@ p {
 
   .footer-section {
     padding: 40px 20px;
+    min-height: unset;
   }
 
   .form-title,
@@ -433,5 +471,17 @@ p {
   }
   p{
     font-size: 8pt;
+  }
+}
+@media (min-width: 1920px) {
+
+  .testimonial-card{
+    width: 50%;
+    padding: 0;
+    border-radius: 2rem;
+  }
+  .testimonial-content {
+    padding: 2rem 0 1rem 1rem;
+    margin: 0;
   }
 }
