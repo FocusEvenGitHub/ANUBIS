@@ -431,12 +431,18 @@ p {
   }
 
   .testimonial-card {
-    padding: 0 1rem;
+    padding: 0;
     margin-top: 2rem;
     height: fit-content;
+    border-radius: 1rem;
+    min-width: 80%;
   }
   .testimonial-card h3{
-  font-size: 16pt;
+    font-size: 10pt;
+  }
+
+  .testimonial-card p{
+    text-align: justify;
   }
 
   .testimonial-content,
