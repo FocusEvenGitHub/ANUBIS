@@ -291,7 +291,20 @@ p {
   aspect-ratio: 1.04;
   object-fit: contain;
 }
-
+.about-container{
+  border-radius: 5rem;
+  margin-top: 60px;
+  max-width: 100%;
+  padding-left: 49px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+.about-description{
+  width: 60%;
+  text-align: justify;
+  color: #fff;
+}
 .footer {
   background-color: #333;
   width: 100%;
