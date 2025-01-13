@@ -288,7 +288,7 @@ p {
 
 .testimonial-image {
   width: 40%;
-  aspect-ratio: 1.04;
+  aspect-ratio: auto;
   object-fit: contain;
 }
 .about-container{
@@ -397,7 +397,9 @@ p {
     margin: 2rem;
     text-align: justify;
   }
-  .hero-description,
+  .hero-description{
+    width: 100%!important;
+  }
   .hero-subtitle,
   .hero-title{
     width: 50%!important;
